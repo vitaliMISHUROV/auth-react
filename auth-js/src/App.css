@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+
+.logo {
+  font-size: 1rem; /* Збільште розмір шрифту для більш видимого тексту */
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 20px; /* Додаємо маржу зверху для передвиження вниз */
+}
+
+.logo img {
+  width: 10%;
+  height: 20%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  border-top: 2px solid #fff;
+  padding-top: 10px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+  padding: 8px 8px;
+  background-color: #0abfc9;
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  background-color: #45a049;
+  color: #fff;
+}
+
+.header::before,
+.header::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.header::before {
+  top: 0;
+}
+
+.header::after {
+  bottom: 0;
+}
+div.logo {
+
+  background-color: bisque;
+  border-color: blue;
+  background-size: cover; /* Не повторювати, покриває весь елемент */
+  background-position: center; /* Вирівнювання фону по центру */
+  background-repeat: no-repeat; /* Вимкнення повторення */
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+}
